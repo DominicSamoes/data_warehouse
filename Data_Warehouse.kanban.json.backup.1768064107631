@@ -1,0 +1,277 @@
+{
+  "columns": [
+    {
+      "id": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
+      "title": "To Do",
+      "color": "#3b82f6",
+      "order": 0
+    },
+    {
+      "id": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "title": "In Progress",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "04366447-5d67-4e26-a57d-84794ed8e6e7",
+      "title": "Done",
+      "color": "#ec4899",
+      "order": 2
+    }
+  ],
+  "cards": [
+    {
+      "id": "a5bc812e-bfcf-431c-aa6f-a230e7624792",
+      "title": "Requirements Analysis",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
+      "priority": "medium",
+      "cardType": "task",
+      "createdAt": "2026-01-06T11:22:26.509Z",
+      "updatedAt": "2026-01-06T13:02:01.738Z",
+      "order": 0,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "bc07d177-1de9-47d3-a289-c853280295ee",
+      "title": "Design Data Architecture",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
+      "priority": "medium",
+      "cardType": "checklist",
+      "checklist": [
+        {
+          "id": "ajcq2a3q8",
+          "text": "Choose Data Management Approach",
+          "completed": true,
+          "order": 0
+        },
+        {
+          "id": "s96pjvko0",
+          "text": "Design The Layers",
+          "completed": true,
+          "order": 1
+        },
+        {
+          "id": "bfgis4eq0",
+          "text": "Draw the Data Architecture (Draw.io)",
+          "completed": true,
+          "order": 2
+        }
+      ],
+      "createdAt": "2026-01-06T11:22:46.753Z",
+      "updatedAt": "2026-01-06T12:49:02.852Z",
+      "order": 1,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "ebac8e9b-da5d-4f75-b5c0-7b565ae2e4cc",
+      "title": "Project Initialization",
+      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "priority": "medium",
+      "cardType": "checklist",
+      "checklist": [
+        {
+          "id": "5bvnemhvx",
+          "text": "Define Project Naminig Conventions",
+          "completed": true,
+          "order": 2
+        },
+        {
+          "id": "mf0omkbw4",
+          "text": "Create GIT Repo & Prepare The Repo Structure",
+          "completed": false,
+          "order": 3
+        },
+        {
+          "id": "7b6r0kshm",
+          "text": "Create DB & Schemas",
+          "completed": false,
+          "order": 3
+        }
+      ],
+      "createdAt": "2026-01-06T11:23:01.986Z",
+      "updatedAt": "2026-01-06T15:38:43.945Z",
+      "order": 0,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      },
+      "comments": [
+        {
+          "id": "ia0fbiwi1",
+          "content": "Need to check Schema Logic within MySQL.",
+          "author": {
+            "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+            "nickname": "DSamo",
+            "color": "#22c55e"
+          },
+          "createdAt": "2026-01-06T15:38:26.530Z",
+          "updatedAt": "2026-01-06T15:38:40.886Z"
+        }
+      ]
+    },
+    {
+      "id": "4414b30a-007e-4b58-81f3-7d40ec193c23",
+      "title": "Build Bronze Layer",
+      "columnId": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
+      "priority": "medium",
+      "cardType": "checklist",
+      "checklist": [
+        {
+          "id": "cb9fxb4fg",
+          "text": "Analysing: Source Systems",
+          "completed": false,
+          "order": 0
+        },
+        {
+          "id": "pkuedz3wi",
+          "text": "Coding: Data Ingestion",
+          "completed": false,
+          "order": 1
+        },
+        {
+          "id": "9r2835k4z",
+          "text": "Validation: Data Completeness & Schema Checks",
+          "completed": false,
+          "order": 2
+        },
+        {
+          "id": "2dpvvfoby",
+          "text": "Document: Draw Data Flow (Draw.io)",
+          "completed": false,
+          "order": 3
+        },
+        {
+          "id": "vn5ggyxz6",
+          "text": "Commit Code in Git Repo",
+          "completed": false,
+          "order": 4
+        }
+      ],
+      "createdAt": "2026-01-06T12:51:42.416Z",
+      "updatedAt": "2026-01-06T12:55:05.155Z",
+      "order": 1,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "e45becfc-fd82-4fa5-8ac8-6ec5cb766f05",
+      "title": "Build Silver Layer",
+      "columnId": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
+      "priority": "medium",
+      "cardType": "checklist",
+      "checklist": [
+        {
+          "id": "fepnrf47m",
+          "text": "Analysing: Explore & Understand Data",
+          "completed": false,
+          "order": 0
+        },
+        {
+          "id": "30l9nezqg",
+          "text": "Coding: Data Cleansing",
+          "completed": false,
+          "order": 1
+        },
+        {
+          "id": "yi4j5t726",
+          "text": "Validation: Data Correctness Checks",
+          "completed": false,
+          "order": 2
+        },
+        {
+          "id": "s8w8uv4tq",
+          "text": "Documenting & Versioning in GIT",
+          "completed": false,
+          "order": 3
+        },
+        {
+          "id": "pfv6nkyib",
+          "text": "Commit Code in Git Repo",
+          "completed": false,
+          "order": 4
+        }
+      ],
+      "createdAt": "2026-01-06T12:51:53.901Z",
+      "updatedAt": "2026-01-06T12:56:44.905Z",
+      "order": 2,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "25544d64-f190-4a94-ae5b-470bf078a68f",
+      "title": "Build Gold Layer",
+      "columnId": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
+      "priority": "medium",
+      "cardType": "checklist",
+      "checklist": [
+        {
+          "id": "zfkunmpc0",
+          "text": "Analysing: Explore Business Objects",
+          "completed": false,
+          "order": 0
+        },
+        {
+          "id": "pgyzyjw74",
+          "text": "Coding: Data Integration",
+          "completed": false,
+          "order": 1
+        },
+        {
+          "id": "jjj6q6orm",
+          "text": "Validation: Data Integration Checks",
+          "completed": false,
+          "order": 2
+        },
+        {
+          "id": "fgp3lr8dk",
+          "text": "Document: Draw Data Models of Star Schema (Draw.io)",
+          "completed": false,
+          "order": 3
+        },
+        {
+          "id": "4bc21w0oa",
+          "text": "Document: Create Data Catalog",
+          "completed": false,
+          "order": 4
+        },
+        {
+          "id": "y5j7cfb0c",
+          "text": "Commit Code in Git Repo",
+          "completed": false,
+          "order": 5
+        }
+      ],
+      "createdAt": "2026-01-06T12:52:02.990Z",
+      "updatedAt": "2026-01-06T13:01:40.553Z",
+      "order": 3,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      }
+    }
+  ],
+  "_meta": {
+    "version": 5,
+    "lastSavedAt": "2026-01-07T18:33:21.676Z",
+    "savedBy": {
+      "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+      "nickname": "DSamo"
+    }
+  }
+}
