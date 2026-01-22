@@ -1,11 +1,10 @@
 -- ============================================================
--- DDL Script: Create Bronze Tables (MySQL Version)
+-- DDL Script: Create Bronze Tables (PostgreSQL Version)
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS bronze;
-USE bronze;
-
 -- CRM Customer Info
+SET search_path TO bronze;
+
 DROP TABLE IF EXISTS crm_cust_info;
 
 CREATE TABLE crm_cust_info (
@@ -27,8 +26,8 @@ CREATE TABLE crm_prd_info (
     prd_nm       VARCHAR(50),
     prd_cost     INT,
     prd_line     VARCHAR(50),
-    prd_start_dt DATETIME,
-    prd_end_dt   DATETIME
+    prd_start_dt TIMESTAMP,
+    prd_end_dt   TIMESTAMP
 );
 
 -- CRM Sales Details

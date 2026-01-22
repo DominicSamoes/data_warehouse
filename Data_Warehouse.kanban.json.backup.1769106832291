@@ -73,7 +73,7 @@
     {
       "id": "ebac8e9b-da5d-4f75-b5c0-7b565ae2e4cc",
       "title": "Project Initialization",
-      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
       "priority": "medium",
       "cardType": "checklist",
       "checklist": [
@@ -97,8 +97,8 @@
         }
       ],
       "createdAt": "2026-01-06T11:23:01.986Z",
-      "updatedAt": "2026-01-18T15:34:04.670Z",
-      "order": 0,
+      "updatedAt": "2026-01-18T15:34:07.791Z",
+      "order": 2,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
@@ -267,8 +267,8 @@
     }
   ],
   "_meta": {
-    "version": 8,
-    "lastSavedAt": "2026-01-18T15:34:04.696Z",
+    "version": 10,
+    "lastSavedAt": "2026-01-22T10:46:33.881Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"
