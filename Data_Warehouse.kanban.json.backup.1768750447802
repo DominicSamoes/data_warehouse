@@ -86,18 +86,18 @@
         {
           "id": "mf0omkbw4",
           "text": "Create GIT Repo & Prepare The Repo Structure",
-          "completed": false,
+          "completed": true,
           "order": 3
         },
         {
           "id": "7b6r0kshm",
           "text": "Create DB & Schemas",
-          "completed": false,
+          "completed": true,
           "order": 3
         }
       ],
       "createdAt": "2026-01-06T11:23:01.986Z",
-      "updatedAt": "2026-01-06T15:38:43.945Z",
+      "updatedAt": "2026-01-18T15:34:04.670Z",
       "order": 0,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
@@ -267,8 +267,8 @@
     }
   ],
   "_meta": {
-    "version": 7,
-    "lastSavedAt": "2026-01-10T16:55:13.045Z",
+    "version": 8,
+    "lastSavedAt": "2026-01-18T15:34:04.696Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"
