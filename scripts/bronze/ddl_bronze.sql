@@ -2,9 +2,9 @@
 -- DDL Script: Create Bronze Tables (PostgreSQL Version)
 -- ============================================================
 
--- CRM Customer Info
 SET search_path TO bronze;
 
+-- CRM Customer Info
 DROP TABLE IF EXISTS crm_cust_info;
 
 CREATE TABLE crm_cust_info (
