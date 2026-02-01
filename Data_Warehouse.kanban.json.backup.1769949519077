@@ -27,7 +27,7 @@
       "priority": "medium",
       "cardType": "task",
       "createdAt": "2026-01-06T11:22:26.509Z",
-      "updatedAt": "2026-01-06T13:02:01.738Z",
+      "updatedAt": "2026-02-01T11:47:17.995Z",
       "order": 0,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
@@ -121,44 +121,44 @@
     {
       "id": "4414b30a-007e-4b58-81f3-7d40ec193c23",
       "title": "Build Bronze Layer",
-      "columnId": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
       "priority": "medium",
       "cardType": "checklist",
       "checklist": [
         {
           "id": "cb9fxb4fg",
           "text": "Analysing: Source Systems",
-          "completed": false,
+          "completed": true,
           "order": 0
         },
         {
           "id": "pkuedz3wi",
           "text": "Coding: Data Ingestion",
-          "completed": false,
+          "completed": true,
           "order": 1
         },
         {
           "id": "9r2835k4z",
           "text": "Validation: Data Completeness & Schema Checks",
-          "completed": false,
+          "completed": true,
           "order": 2
         },
         {
           "id": "2dpvvfoby",
           "text": "Document: Draw Data Flow (Draw.io)",
-          "completed": false,
+          "completed": true,
           "order": 3
         },
         {
           "id": "vn5ggyxz6",
           "text": "Commit Code in Git Repo",
-          "completed": false,
+          "completed": true,
           "order": 4
         }
       ],
       "createdAt": "2026-01-06T12:51:42.416Z",
-      "updatedAt": "2026-01-06T12:55:05.155Z",
-      "order": 1,
+      "updatedAt": "2026-02-01T11:46:43.489Z",
+      "order": 3,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
@@ -168,13 +168,13 @@
     {
       "id": "e45becfc-fd82-4fa5-8ac8-6ec5cb766f05",
       "title": "Build Silver Layer",
-      "columnId": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
+      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
       "priority": "medium",
       "cardType": "checklist",
       "checklist": [
         {
           "id": "fepnrf47m",
-          "text": "Analysing: Explore & Understand Data",
+          "text": "Analysing: Explore & Understand Data (Draw.io)",
           "completed": false,
           "order": 0
         },
@@ -201,11 +201,17 @@
           "text": "Commit Code in Git Repo",
           "completed": false,
           "order": 4
+        },
+        {
+          "id": "3mvvuefsf",
+          "text": "Document: Draw Data Integration (Draw.io)",
+          "completed": false,
+          "order": 5
         }
       ],
       "createdAt": "2026-01-06T12:51:53.901Z",
-      "updatedAt": "2026-01-06T12:56:44.905Z",
-      "order": 2,
+      "updatedAt": "2026-02-01T11:49:27.582Z",
+      "order": 0,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
@@ -268,7 +274,7 @@
   ],
   "_meta": {
     "version": 13,
-    "lastSavedAt": "2026-02-01T11:09:36.681Z",
+    "lastSavedAt": "2026-02-01T11:49:27.595Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"
