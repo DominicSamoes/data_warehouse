@@ -25,12 +25,13 @@ DROP TABLE IF EXISTS crm_prd_info;
 CREATE TABLE
     crm_prd_info (
         prd_id INT,
+        cat_id VARCHAR(50),
         prd_key VARCHAR(50),
         prd_nm VARCHAR(50),
         prd_cost INT,
         prd_line VARCHAR(50),
-        prd_start_dt TIMESTAMP,
-        prd_end_dt TIMESTAMP,
+        prd_start_dt DATE,
+        prd_end_dt DATE,
         dwh_created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
 
