@@ -158,7 +158,7 @@
       ],
       "createdAt": "2026-01-06T12:51:42.416Z",
       "updatedAt": "2026-02-01T11:46:43.489Z",
-      "order": 3,
+      "order": 4,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
@@ -168,7 +168,7 @@
     {
       "id": "e45becfc-fd82-4fa5-8ac8-6ec5cb766f05",
       "title": "Build Silver Layer",
-      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
       "priority": "medium",
       "cardType": "checklist",
       "checklist": [
@@ -193,13 +193,13 @@
         {
           "id": "s8w8uv4tq",
           "text": "Documenting & Versioning in GIT",
-          "completed": false,
+          "completed": true,
           "order": 3
         },
         {
           "id": "pfv6nkyib",
           "text": "Commit Code in Git Repo",
-          "completed": false,
+          "completed": true,
           "order": 4
         },
         {
@@ -210,8 +210,8 @@
         }
       ],
       "createdAt": "2026-01-06T12:51:53.901Z",
-      "updatedAt": "2026-02-08T10:39:41.079Z",
-      "order": 0,
+      "updatedAt": "2026-02-08T10:56:15.536Z",
+      "order": 3,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
@@ -273,8 +273,8 @@
     }
   ],
   "_meta": {
-    "version": 18,
-    "lastSavedAt": "2026-02-08T10:39:41.089Z",
+    "version": 19,
+    "lastSavedAt": "2026-02-08T10:56:17.771Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"

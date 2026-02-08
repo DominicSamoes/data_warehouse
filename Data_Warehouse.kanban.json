@@ -168,7 +168,7 @@
     {
       "id": "e45becfc-fd82-4fa5-8ac8-6ec5cb766f05",
       "title": "Build Silver Layer",
-      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
       "priority": "medium",
       "cardType": "checklist",
       "checklist": [
@@ -199,7 +199,7 @@
         {
           "id": "pfv6nkyib",
           "text": "Commit Code in Git Repo",
-          "completed": false,
+          "completed": true,
           "order": 4
         },
         {
@@ -210,8 +210,8 @@
         }
       ],
       "createdAt": "2026-01-06T12:51:53.901Z",
-      "updatedAt": "2026-02-08T10:46:13.344Z",
-      "order": 0,
+      "updatedAt": "2026-02-08T10:56:32.783Z",
+      "order": 4,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
@@ -274,7 +274,7 @@
   ],
   "_meta": {
     "version": 19,
-    "lastSavedAt": "2026-02-08T10:46:13.350Z",
+    "lastSavedAt": "2026-02-08T10:56:32.793Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"
