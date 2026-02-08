@@ -143,3 +143,135 @@ SELECT
     ) AS prd_end_dt
 FROM
     bronze.crm_prd_info;
+
+-- crm_sales_details
+-- Check for Invalid Dates
+SELECT
+    NULLIF(sls_order_dt, 0) AS sls_order_dt
+FROM
+    bronze.crm_sales_details
+WHERE
+    sls_order_dt <= 0
+    OR LENGTH (CAST(sls_order_dt AS VARCHAR)) != 8
+    OR sls_order_dt > CAST(TO_CHAR (CURRENT_DATE, 'YYYYMMDD') AS INT);
+
+-- Sale order date should not be greater than ship date and due date
+SELECT
+    *
+FROM
+    bronze.crm_sales_details
+WHERE
+    sls_order_dt > sls_ship_dt
+    OR sls_order_dt > sls_due_dt
+    --Sales = Quantity * Price
+SELECT DISTINCT
+    sls_sales AS old_sls_sales,
+    sls_quantity,
+    sls_price AS old_sls_price,
+    CASE
+        WHEN sls_price IS NULL
+        OR sls_price <= 0
+        OR sls_sales != sls_quantity * ABS(sls_price) THEN sls_quantity * ABS(sls_price)
+        ELSE sls_price
+    END AS sls_sales,
+    CASE
+        WHEN sls_price IS NULL
+        or sls_price <= 0 THEN sls_sales / NULLIF(sls_quantity, 0)
+        ELSE sls_price
+    END AS sls_price
+FROM
+    bronze.crm_sales_details
+WHERE
+    sls_sales != sls_quantity * sls_price
+    OR sls_sales IS NULL
+    OR sls_quantity IS NULL
+    OR sls_price IS NULL
+    OR sls_sales <= 0
+    OR sls_quantity <= 0
+    OR sls_price <= 0
+ORDER BY
+    sls_sales,
+    sls_quantity,
+    sls_price DESC;
+
+-- erp_cust_az12
+-- Data Standardization & Consistency
+SELECT
+    CASE
+        WHEN cid LIKE 'NAS%' THEN SUBSTRING(cid, 4, LENGTH (cid))
+        ELSE cid
+    END cid,
+    bdate,
+    gen
+FROM
+    bronze.erp_cust_az12
+WHERE
+    cid NOT IN (
+        SELECT DISTINCT
+            cst_key
+        FROM
+            silver.crm_cust_info
+    );
+
+-- Check for Invalid Dates
+SELECT
+    bdate
+FROM
+    bronze.erp_cust_az12
+WHERE
+    bdate < '1924-01-01'
+    AND bdate > CURRENT_DATE()
+    -- Data Standardization & Consistency
+SELECT DISTINCT
+    gen,
+    CASE
+        WHEN UPPER(TRIM(gen)) IN ('F', 'FEMALE') THEN 'Female'
+        WHEN UPPER(TRIM(gen)) IN ('M', 'Male') THEN 'Male'
+        ELSE 'n/a'
+    END AS gen
+FROM
+    bronze.erp_cust_az12;
+
+-- erp_loc_a101
+-- Data Standardization & Consistency
+SELECT DISTINCT
+    cntry
+    --REPLACE (cid, '-', '') cid,
+    CASE
+        WHEN UPPER(TRIM(cntry)) = 'DE' THEN 'Germany'
+        WHEN UPPER(TRIM(cntry)) IN ('US', 'USA') THEN 'United States'
+        WHEN TRIM(cntry) = ''
+        OR cntry IS NULL THEN 'n/a'
+        ELSE TRIM(cntry)
+    END AS cntry
+FROM
+    bronze.erp_loc_a101
+
+
+-- erp_px_cat_g1v2
+SELECT
+    id,
+    cat,
+    subcat,
+    maintenance
+FROM
+    bronze.erp_px_cat_g1v2
+
+-- Check Unwanted Spaces
+SELECT
+    id,
+    cat,
+    subcat,
+    maintenance
+FROM
+    bronze.erp_px_cat_g1v2
+WHERE
+    cat != TRIM(cat)
+    OR subcat != TRIM(subcat)
+    OR maintenance != TRIM(maintenance)
+
+-- Data Standardization & Consistency
+SELECT DISTINCT
+    cat
+FROM
+    bronze.erp_px_cat_g1v2

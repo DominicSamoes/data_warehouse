@@ -181,13 +181,13 @@
         {
           "id": "30l9nezqg",
           "text": "Coding: Data Cleansing",
-          "completed": false,
+          "completed": true,
           "order": 1
         },
         {
           "id": "yi4j5t726",
           "text": "Validation: Data Correctness Checks",
-          "completed": false,
+          "completed": true,
           "order": 2
         },
         {
@@ -210,7 +210,7 @@
         }
       ],
       "createdAt": "2026-01-06T12:51:53.901Z",
-      "updatedAt": "2026-02-01T12:39:11.632Z",
+      "updatedAt": "2026-02-08T10:39:41.079Z",
       "order": 0,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
@@ -273,8 +273,8 @@
     }
   ],
   "_meta": {
-    "version": 15,
-    "lastSavedAt": "2026-02-02T18:03:04.234Z",
+    "version": 19,
+    "lastSavedAt": "2026-02-08T10:39:50.856Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"
