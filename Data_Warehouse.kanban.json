@@ -221,7 +221,7 @@
     {
       "id": "25544d64-f190-4a94-ae5b-470bf078a68f",
       "title": "Build Gold Layer",
-      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "columnId": "04366447-5d67-4e26-a57d-84794ed8e6e7",
       "priority": "medium",
       "cardType": "checklist",
       "checklist": [
@@ -264,28 +264,43 @@
         {
           "id": "5wfhvxu3r",
           "text": "Commit Code in Git Repo",
-          "completed": false,
+          "completed": true,
           "order": 6
         }
       ],
       "createdAt": "2026-01-06T12:52:02.990Z",
-      "updatedAt": "2026-03-06T10:47:49.241Z",
-      "order": 0,
+      "updatedAt": "2026-03-08T11:33:28.047Z",
+      "order": 5,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
         "nickname": "DSamo",
         "color": "#22c55e"
-      },
-      "dueDate": "2026-03-06T10:00:00.000Z"
+      }
     },
     {
       "id": "00449d8b-fee8-4184-b0b2-4f4a7d7f8984",
       "title": "Post on LinkedIn",
       "columnId": "705dd81c-ca4b-4bdc-bbcb-d9fe760e683d",
-      "priority": "medium",
+      "priority": "high",
       "cardType": "task",
+      "dueDate": "2026-03-08T10:00:00.000Z",
       "createdAt": "2026-03-06T10:40:47.515Z",
-      "updatedAt": "2026-03-06T10:40:47.515Z",
+      "updatedAt": "2026-03-06T10:51:54.835Z",
+      "order": 0,
+      "createdBy": {
+        "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
+        "nickname": "DSamo",
+        "color": "#22c55e"
+      }
+    },
+    {
+      "id": "6c8b727d-9f53-4f0e-8bb7-cdc5a8528f43",
+      "title": "Modify README File",
+      "columnId": "b134d186-2d4f-477d-a3a7-adb1d7ddd230",
+      "priority": "high",
+      "cardType": "task",
+      "createdAt": "2026-03-06T10:51:19.679Z",
+      "updatedAt": "2026-03-08T11:33:37.809Z",
       "order": 0,
       "createdBy": {
         "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
@@ -295,8 +310,8 @@
     }
   ],
   "_meta": {
-    "version": 25,
-    "lastSavedAt": "2026-03-06T10:47:49.255Z",
+    "version": 26,
+    "lastSavedAt": "2026-03-08T11:33:37.823Z",
     "savedBy": {
       "id": "21cfe893-1bea-4aed-a31c-8d8cc393bbf4",
       "nickname": "DSamo"
