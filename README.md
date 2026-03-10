@@ -8,7 +8,7 @@ This project demonstrates a comprehensive data warehousing solution built using 
 
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver** and **Gold** layers:
 
-![Data Architecture](documents/High%20Level%20Architecture.png)
+![Data Architecture](documents/High_Level_Architecture.png)
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into the database.
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
@@ -99,10 +99,10 @@ data_warehouse/
 
 Since my data warehouse is built on PostgreSQL, Python served as the primary tool for data integration. I used a Jupyter Notebook to explore the source material before importing the full contents of the CRM and ERP directories.
 
-* The load code for the Bronze Layer can be found [here](../scripts/bronze/Load.ipynb). 
-* For the Silver Layer, I opted for a hybrid approach: a Python notebook available [here](../scripts/silver/Load.ipynb) orchestrates the data load by executing a dedicated PostgreSQL stored [procedure](../scripts/silver/load_stored_procedure.sql) whenever a refresh is required.
+* The load code for the Bronze Layer can be found [here](scripts/bronze/Load.ipynb). 
+* For the Silver Layer, I opted for a hybrid approach: a Python notebook available [here](scripts/silver/Load.ipynb) orchestrates the data load by executing a dedicated PostgreSQL stored [procedure](scripts/silver/load_stored_procedure.sql) whenever a refresh is required.
 
 ---
 ## References
 
-Shoutout to Baraa Khatib Salkini for the inspiration. Be sure to check out his YouTube channel[YouTube](https://www.youtube.com/@DataWithBaraa)
+Shoutout to Baraa Khatib Salkini for the inspiration. Be sure to check out his YouTube [channel](https://www.youtube.com/@DataWithBaraa)
